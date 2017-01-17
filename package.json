@@ -1,0 +1,34 @@
+{
+  "name": "project-blog",
+  "version": "0.0.1",
+  "description": "folder to study sass npm yeoman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean & babel src -d lib",
+    "clean": "rimraf lib/*",
+    "cleanAll": "rimraf lib/* & rimraf src/*",
+    "babeljsx": "babel src/index.jsx --out-file lib/index.js",
+    "babeljsx1": "babel --plugins transform-react-jsx src/creditActive.jsx --out-file lib/creditActive.js",
+    "conpileJss":"browserify lib/index.js -o ./bin/bundle.js"
+  },
+  "author": "Tangerwei",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-env": "^1.1.6",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "browserify": "^13.3.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "redux-devtools": "^3.3.1",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0"
+  }
+}

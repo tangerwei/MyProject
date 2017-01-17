@@ -1,0 +1,9 @@
+{
+    "presets" :["env","react","es2015"],
+    // without options
+    "plugins": [
+    ["transform-react-jsx", {
+      "pragma": "React.createElement" // default pragma is React.createElement
+    }]
+  ]
+}
