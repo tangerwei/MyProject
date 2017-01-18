@@ -1,5 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Redux from 'react-redux'
+import Data from '../src/data.js'//测试import使用方法
+const reData = require('../src/data_require.js');
+console.log('import data :');
+console.log(Data);
+console.log('require data :');
+console.log(reData);
 function init() {
     //创建header组件
     var link = "#";
