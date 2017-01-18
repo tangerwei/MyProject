@@ -1,0 +1,17 @@
+rimraf模块用来清空某个文件夹下的文件
+rimraf lib/* 删除所有
+
+编译jsx需要安装npm install --save-dev babel-plugin-transform-react-jsx
+
+babel调用插件编译
+
+在.babelrc中添加
+属性"plugins": [
+    ["transform-react-jsx", {
+      "pragma": "React.createElement" // default pragma is React.createElement
+    }]
+编译时调用babel --plugins transform-react-jsx src/reacts.jsx --out-file lib/reacts.js
+解释：--plugins表示通过 .babelrc文件中的plugins属性，而后面紧跟着的transform-react-jsx则表示根据哪个属性的值进行编译
+
+
+react组件之间通信

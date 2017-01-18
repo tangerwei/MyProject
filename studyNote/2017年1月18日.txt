@@ -1,0 +1,37 @@
+node
+
+import 用于模块的添加，然而自定义模块的输出形式如下
+ module.exports = 
+等号后面可以是函数，对象，数组等等
+
+
+require用于（内部）模块的加载
+
+实际使用如下
+
+Module_A
+exports.do_something = do_nothing;
+
+
+Module_B
+
+var module_a = require（"Module_A"）
+module_a.do_something();
+
+
+相同点 两个都可以用于模块的加载，import实质上是require的升级
+
+不同点
+但是具体使用的过程中会发现 import 实质上返回的是具体数据，而require实际上
+返回的以具体数据作为属性值的对象，也就是说
+data中
+module.exports = {
+    key:'datakeyvalue'
+}
+import data from "data" 那么data的值就是{key:"datakeyvalue"}
+
+data2中
+exports.data = {
+    key:'require data'
+}
+而var data = require("data2");这个语句中data的值是{data:{key:"require data"}}

@@ -1,0 +1,29 @@
+1.自动化编程不用js作为引入文件，而是用module作为构建项目的基本单位，
+而模块的导入使用import，同时可以使用browserify作为模块js的合并工具
+即在js中使用import导入模块使用相应的对象，而在编译的过程中使用browserify可以
+直接为使用的js合并入依赖模块
+--转变编程基本的单元
+2.模块的导入使用import，而js文件引入需要使用require,由于浏览器端是没有默认require
+所以，在browserify中如果出现require，则会自动添加一个require函数。
+注意 import，require的加载路径差异
+
+至此，模块加载和js加载结束
+
+git上传文件夹的时候需要忽略一些文件，可以通过创建名为.gitignore文件来完成目的
+step1>创建后缀名为.gitignore文件
+step2>内容如下
+node_modules/  表示忽略文件夹下所有
+npm-debug.log  忽略该文件
+bundle.js
+
+
+git的push需要用gitBash操作，用cmd和powerShell都会导致密码界面无法打开
+
+git的提交操作
+
+前提：本地代码是从git上clone
+命令是 git clone https://
+
+提交命令是  添加->push
+git add *
+git push origin master //添加到目前的默认分支
