@@ -10,7 +10,11 @@
     "cleanAll": "rimraf lib/* & rimraf src/*",
     "babeljsx": "babel src/index.jsx --out-file lib/index.js",
     "babeljsx1": "babel --plugins transform-react-jsx src/creditActive.jsx --out-file lib/creditActive.js",
-    "conpileJss":"browserify lib/index.js -o ./bin/bundle.js"
+    "conpileJss":"browserify lib/index.js -o ./bin/bundle.js",
+    "babelfi": "babel src/reducers.js --out-file lib/reducers.js",
+    "conpildu":"browserify lib/reducers.js -o ./bin/bundle_reducers.js",
+    "broaction": "browserify lib/reducers.js -o ./bin/bundle_reducers.js",
+    "babelaction": "babel src/reducers.js --out-file lib/reducers.js"
   },
   "author": "Tangerwei",
   "license": "ISC",

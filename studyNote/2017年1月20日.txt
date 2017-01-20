@@ -1,0 +1,10 @@
+//
+ES 6 
+简易定义函数
+var createObj = (name)=>console.log(name)
+如果
+import obj from "create"
+//obj = create.exports
+如果
+import {obj} from "create"
+//obj = create.exports.obj
