@@ -1,0 +1,15 @@
+{
+  "name": "hello_test_tangerwei",
+  "version": "1.0.0",
+  "description": "a hello world package",
+  "main": "./hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Hello",
+    "world"
+  ],
+  "author": "tangerwei",
+  "license": "MIT"
+}
