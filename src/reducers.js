@@ -18,6 +18,7 @@
 // const reducerFunc = (previousState,action) => newState
 
 import {VisibilityFilters} from '../src/actions.js'
+import hellobj,{sayHello} from 'hello_test_tangerwei'
 const initialState = {
     visibilityFilter :VisibilityFilters.SHOW_ALL,
     todos:[]
@@ -37,4 +38,9 @@ function todoes6App(state = initialState,action){
     }
     return state;
 }
-console.log(VisibilityFilters);
+// console.log(VisibilityFilters);
+console.log(hellobj);
+//sayHello();
+//调用步骤
+//npm run babelaction
+//npm run broaction
