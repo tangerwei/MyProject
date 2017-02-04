@@ -14,7 +14,10 @@
     "babelfi": "babel src/reducers.js --out-file lib/reducers.js",
     "conpildu": "browserify lib/reducers.js -o ./bin/bundle_reducers.js",
     "broaction": "browserify lib/reducers.js -o ./bin/bundle_reducers.js",
-    "babelaction": "babel src/reducers.js --out-file lib/reducers.js"
+    "babelaction": "babel src/reducers.js --out-file lib/reducers.js",
+    //线转化语法，然后打包文件 这里是生成node可执行的js，注意：如果单纯在node中执行，是不需要打包。只需要安装好依赖即可
+    "broredux": "browserify lib/reduxNy_build.js -o node_study_note/reduxNy_build.js",//打包文件 step2
+    "babelredux": "babel node_study_note/reduxNy.js --out-file lib/reduxNy_build.js"//转化语法 step1
   },
   "author": "Tangerwei",
   "license": "ISC",
