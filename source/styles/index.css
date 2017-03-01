@@ -1,0 +1,45 @@
+body{
+    /*font-family: 'Ek Mukta', sans-serif;*/
+    color: #666;
+    background: url(../images/indexbg.jpg) fixed;
+    font-size: 15px;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+}
+        @media(min-width:768px) {
+            .container {
+                width: 750px;
+            }
+        }
+        
+        @media(min-width:992px) {
+            .container {
+                width: 970px;
+            }
+        }
+        
+        @media(min-width:1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+        
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+.diverhr{
+    height:2px;border:none;border-top:2px dotted #185598;
+}
+.tags{
+    margin-left:20x; 
+}
+.tag:first{
+    margin-left: 0px;
+}

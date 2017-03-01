@@ -60,7 +60,7 @@ const Example = React.createClass({
         var arrlist = [];
         if (this.state.tags.length > 0) {
             arrlist = this.state.tags.map(function (item, index) {
-                return (<Button key={index}>{item}</Button>)
+                return (<Button class="tags" key={index}>{item}</Button>)
             });
         }
         return (<div>{arrlist}</div>)

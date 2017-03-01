@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <script src="scripts/index.js"></script>
+    <header id="header" class="container">
+    </header>
+    <!--下面是生成tag的代码-->
+    <!--<script src="../sourceBuild/tags_build.js"></script>-->
+    <script>
+        function init(){
+            var _str =initLocation();
+            if(_str.key = "tag"){
+                loadScript("../sourceBuild/tags_build.js")
+            }
+        }
+        function loadScript(address){
+            var script = document.createElement("script");
+                script.src = address;
+                document.body.appendChild(script);
+        }
+        function initLocation(){
+            var obj = {};
+            var href = location.href.split("?")[1];
+            href.split("&").map(function(item){
+                var key = item.split("=")[0];
+                var value = item.split("=")[1];
+                obj[key] = value;
+            })
+            return obj;
+        }
+        window.onload = function(){
+            init();
+        }
+    </script>
 </body>
 </html>

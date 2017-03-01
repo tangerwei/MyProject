@@ -15,9 +15,10 @@
     "conpildu": "browserify lib/reducers.js -o ./bin/bundle_reducers.js",
     "broaction": "browserify lib/reducers.js -o ./bin/bundle_reducers.js",
     "babelaction": "babel src/reducers.js --out-file lib/reducers.js",
-    //线转化语法，然后打包文件 这里是生成node可执行的js，注意：如果单纯在node中执行，是不需要打包。只需要安装好依赖即可
-    "broredux": "browserify lib/reduxNy_build.js -o node_study_note/reduxNy_build.js",//打包文件 step2
-    "babelredux": "babel node_study_note/reduxNy.js --out-file lib/reduxNy_build.js"//转化语法 step1
+    "broredux": "browserify lib/reduxNy_build.js -o node_study_note/reduxNy_build.js",
+    "babelredux": "babel node_study_note/reduxNy.js --out-file lib/reduxNy_build.js",
+    "babelbuild": "babel source/scripts/index.js  --out-file sourceBuild/index.js",
+    "brobuild": "browserify sourceBuild/index.js -o sourceBuild/tags_build.js"
   },
   "author": "Tangerwei",
   "license": "ISC",
@@ -36,7 +37,16 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.20.0",
+    "react-bootstrap": "^0.30.7",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangerwei/MyProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tangerwei/MyProject/issues"
+  },
+  "homepage": "https://github.com/tangerwei/MyProject#readme"
 }
