@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvasD" height="40" width="40">sdasdas</canvas>
+    <script>
+        var initTime = 20000; 
+        var THP = 20;
+        var going = false;
+        var canvas = document.getElementById('canvasD');
+        var context = canvas.getContext("2d");
+        var curent = 1;
+        var totalTime;
+        window.onload = function(){
+            totalTime = initTime/THP;
+            initdraw();
+            canvas.onclick = function(){
+                going = true;
+                //goingPlay();
+            }
+        }
+        function initdraw(){
+            context.fillStyle = 'red';
+            context.beginPath();
+            context.arc(20,20,19,0,2*Math.PI,false);
+            context.moveTo(20,30);
+            context.arc(20,20,16,0,2*Math.PI,false);
+            context.fill();
+        }
+        function drawCurrent(){
+            context.beginPath();
+            //计算起点
+            //context.arc(20,20,19,caculateAR(curent),caculateAR(curent+1),false);
+            context.fillStyle = '#fff';
+            context.arc(20,20,19,0,Math.PI,false);
+            context.stroke();
+            context.fillStyle = 'red';
+            context.arc(20,20,19,0,Math.PI,false);
+            context.stroke();
+            curent++;
+            if(curent>totalTime){
+                going = false;
+            }
+        }
+        function caculateAR(no){
+            return (curent - 1)*(2*Math.PI/totalTime);
+        }
+        function goingPlay(){
+            drawCurrent();
+            //loop(drawCurrent,THP);
+        }
+        function loop(func,intel){
+            if(going){
+                func();
+                setTimeout(function(){
+                    loop(drawCurrent,THP);
+                },intel);
+            }
+        }
+    </script>
+</body>
+</html>
