@@ -18,7 +18,7 @@
     "broredux": "browserify lib/reduxNy_build.js -o node_study_note/reduxNy_build.js",
     "babelredux": "babel node_study_note/reduxNy.js --out-file lib/reduxNy_build.js",
     "babelbuild": "babel source/scripts/index.js  --out-file sourceBuild/index.js",
-    "brobuild": "browserify sourceBuild/index.js -o sourceBuild/tags_build.js"
+    "brobuild": "browserify sourceBuild/index.js -o sourceBuild/thumbnail_build.js"
   },
   "author": "Tangerwei",
   "license": "ISC",

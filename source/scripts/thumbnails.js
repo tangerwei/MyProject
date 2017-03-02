@@ -1,12 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import update from 'react-addons-update'
-import {Grid,Row,Col,Thumbnail,Button} from 'react-bootstrap'
+import Bootstrap from 'react-bootstrap'
+var Grid = Bootstrap.Grid;
+var Row = Bootstrap.Row;
+var Col = Bootstrap.Col;
+var Thumbnail = Bootstrap.Thumbnail;
+var Button = Bootstrap.Button;
 function thumbails() {
-    getData(createThumbnail);
+    const ThumbnailInstance = React.createClass({
+        render() {
+            const el = getData(createThumbnail);
+            return (<Grid>
+                <Row>
+                    {el}
+                </Row>
+            </Grid>);
+        }
+    });
+
 }
 function createThumbnail(data) {
-    var arrayList = data.map(function (item, index) {
+    const arrayList = data.map(function (item, index) {
         return (<Col key={index} xs={6} md={4}>
             <Thumbnail src={item.pictureUrl} alt="372x221">
                 <h3>{item.title}</h3>
@@ -18,16 +33,6 @@ function createThumbnail(data) {
             </Thumbnail>
         </Col>)
     });
-    const ThumbnailInstance = React.createClass({
-        render() {
-            return (<Grid>
-                <Row>
-                    {arrayList}
-                </Row>
-            </Grid>);
-        }
-    });
-    ReactDOM.render(<ThumbnailInstance />,document.getElementById("header"));
 }
 function getData(callback) {
     var xhr = new XMLHttpRequest();
@@ -41,4 +46,3 @@ function getData(callback) {
     }
     xhr.send();
 }
-thumbails();

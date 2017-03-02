@@ -14,8 +14,11 @@
     <script>
         function init(){
             var _str =initLocation();
-            if(_str.key = "tag"){
+            if(_str.key == "tag"){
                 loadScript("../sourceBuild/tags_build.js")
+            }
+            if(_str.key == "thumbnail"){
+                loadScript("../sourceBuild/thumbnail_build.js")
             }
         }
         function loadScript(address){

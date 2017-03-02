@@ -14,3 +14,7 @@ https://tangerwei.github.io/MyProject/index.html
 https://react-bootstrap.github.io/components.html
 
 https://facebook.github.io/react/docs/update.html
+
+
+2017年3月2日 10:29:41
+在source下创建data目录，主存放页面展示过程中的模拟数据
