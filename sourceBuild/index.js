@@ -39,13 +39,12 @@ function createThumbnail(data) {
                 ),
                 _react2.default.createElement(
                     'p',
-                    null,
+                    { className: 'btn_blank' },
                     _react2.default.createElement(
                         _reactBootstrap.Button,
                         { bsStyle: 'primary' },
                         'Button'
                     ),
-                    ';',
                     _react2.default.createElement(
                         _reactBootstrap.Button,
                         { bsStyle: 'default' },

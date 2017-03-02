@@ -11,9 +11,9 @@ function createThumbnail(data) {
             <Thumbnail src={item.pictureUrl} alt="372x221">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <p>
-                    <Button bsStyle="primary">Button</Button>;
-                        <Button bsStyle="default">Button</Button>
+                <p className="btn_blank">
+                    <Button bsStyle="primary">Button</Button>
+                    <Button bsStyle="default">Button</Button>
                 </p>
             </Thumbnail>
         </Col>)

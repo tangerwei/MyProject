@@ -44,3 +44,7 @@ body{
 #tagContainer>button:first-child{
     margin-left: 0px;
 }
+
+.btn_blank>button:last-child{
+    margin-left: 5px;
+}
