@@ -13,7 +13,7 @@
     <!--<script src="../sourceBuild/tags_build.js"></script>-->
     <script>
         function init(){
-            var _str =initLocation();
+            var _str =initLocation().split("#")[0];
             if(_str.key == "tag"){
                 loadScript("../sourceBuild/tags_build.js")
             }
