@@ -45,6 +45,6 @@ body{
     margin-left: 0px;
 }
 
-.btn_blank>button:last-child{
+p.btn_blank>button:last-child {
     margin-left: 5px;
 }
