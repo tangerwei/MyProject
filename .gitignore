@@ -4,3 +4,4 @@ bin/
 .sass-cache/
 style/
 npm-debug.log
+sourceBuild/index.js
