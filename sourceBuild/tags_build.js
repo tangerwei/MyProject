@@ -39053,7 +39053,7 @@ var Example = _react2.default.createClass({
         return { tags: ["tag1"] };
     },
     setTags: function setTags(arr) {
-        var _state = [];
+        var _state = this.state.tags;
         if (arr.length > 0) {
             _state = this.state.tags.concat(arr);
         }
@@ -39065,7 +39065,7 @@ var Example = _react2.default.createClass({
             arrlist = this.state.tags.map(function (item, index) {
                 return _react2.default.createElement(
                     _reactBootstrap.Button,
-                    { 'class': 'tags', key: index },
+                    { key: index },
                     item
                 );
             });

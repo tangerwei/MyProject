@@ -50,7 +50,7 @@ const Example = React.createClass({
         return { tags: ["tag1"] }
     },
     setTags(arr) {
-        var _state = [];
+        var _state = this.state.tags;
         if (arr.length > 0) {
             _state = this.state.tags.concat(arr);
         }
@@ -60,7 +60,7 @@ const Example = React.createClass({
         var arrlist = [];
         if (this.state.tags.length > 0) {
             arrlist = this.state.tags.map(function (item, index) {
-                return (<Button class="tags" key={index}>{item}</Button>)
+                return (<Button key={index}>{item}</Button>)
             });
         }
         return (<div>{arrlist}</div>)

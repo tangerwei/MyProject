@@ -50,7 +50,7 @@ const Example = React.createClass({
         return { tags: ["tag1"] }
     },
     setTags(arr) {
-        var _state = [];
+        var _state = this.state.tags;
         if (arr.length > 0) {
             _state = this.state.tags.concat(arr);
         }
