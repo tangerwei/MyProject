@@ -127,7 +127,7 @@ var StarButtons = _react2.default.createClass({
             if (starState[index] == false) {
                 return _react2.default.createElement(
                     _reactBootstrap.Button,
-                    { onClick: _self.handleStar.bind(null, index, event) },
+                    { key: index, onClick: _self.handleStar.bind(null, index, event) },
                     _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: glyph_b }),
                     ' ',
                     item,

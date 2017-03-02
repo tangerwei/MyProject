@@ -68,7 +68,7 @@ const StarButtons = React.createClass({
         const starList = this.state.arr.map(function(item,index){
             const glyph_b = starState[index] == true ? "star":"star-empty";
             if(starState[index] == false){
-                return (<Button onClick={_self.handleStar.bind(null,index,event)}><Glyphicon glyph={glyph_b}/> {item} </Button>)
+                return (<Button key={index} onClick={_self.handleStar.bind(null,index,event)}><Glyphicon glyph={glyph_b}/> {item} </Button>)
             }else{
                 return (<OverlayTrigger key={index} trigger="hover" placement="right" overlay={popverLeft}>
                     <Button onClick={_self.handleStar.bind(null,index,event)}><Glyphicon glyph={glyph_b}/> {item} </Button>
