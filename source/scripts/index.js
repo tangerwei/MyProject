@@ -63,7 +63,7 @@ const Example = React.createClass({
                 return (<Button key={index}>{item}</Button>)
             });
         }
-        return (<div>{arrlist}</div>)
+        return (<div id="tagContainer">{arrlist}</div>)
     }
 })
 

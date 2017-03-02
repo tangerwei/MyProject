@@ -34,12 +34,13 @@ body{
             padding-right: 15px;
         }
 
+/* for tag demo*/
 .diverhr{
     height:2px;border:none;border-top:2px dotted #185598;
 }
-.tags{
-    margin-left:20x; 
+#tagContainer button{
+    margin-left:20px; 
 }
-.tag:first{
+#tagContainer>button:first-child{
     margin-left: 0px;
 }

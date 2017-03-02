@@ -39072,7 +39072,7 @@ var Example = _react2.default.createClass({
         }
         return _react2.default.createElement(
             'div',
-            null,
+            { id: 'tagContainer' },
             arrlist
         );
     }
