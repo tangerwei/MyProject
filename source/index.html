@@ -13,7 +13,7 @@
     <!--<script src="../sourceBuild/tags_build.js"></script>-->
     <script>
         function init(){
-            var _str =initLocation().split("#")[0];
+            var _str =initLocation();
             if(_str.key == "tag"){
                 loadScript("../sourceBuild/tags_build.js")
             }
@@ -35,7 +35,7 @@
             href.split("&").map(function(item){
                 var key = item.split("=")[0];
                 var value = item.split("=")[1];
-                obj[key] = value;
+                obj[key] = value.split("#")[0];
             })
             return obj;
         }
