@@ -35,3 +35,21 @@ react框架的学习顺序
 </ul>
 
 <strong>创建新的分支ver2.0.0</strong>
+
+
+github发布静态网页步骤
+<ul style="list-style: decimal;">
+    <li>
+        <p>step-1:创建github项目并且clone到本地</p>
+    </li>
+    <li>step-2:项目目录下创建index.html(必须存在，因为发布时，会自动搜索根目录下的index.html)</li>
+    <li>step-3:发布项目，如下图</br>
+    setting目录下
+    <img src="./READMEPIC/01.png"/></br>
+    找到GitHub Pages部分
+    <img src="./READMEPIC/02.png"/></br>
+    然后在Source的下拉框里选择master branch,然后点击save，就会出现下图<br/>
+    <img src="./READMEPIC/03.png"/></br>
+    出现的路径就是你的index页面显示的地址
+    </li>
+</ul>
