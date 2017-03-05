@@ -33,3 +33,5 @@ react框架的学习顺序
     <li><a href="https://facebook.github.io/flux/">Flux</a></li>
     <li><a href="http://www.redux.org.cn/docs/api/index.html">Redux</a></li>
 </ul>
+
+<strong>创建新的分支ver2.0.0</strong>
