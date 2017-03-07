@@ -53,3 +53,12 @@ github发布静态网页步骤
     出现的路径就是你的index页面显示的地址
     </li>
 </ul>
+
+
+2017年3月6日 09:24:12</br>
+参考资料1：http://www.cnblogs.com/lovesueee/p/4893218.html</br>
+参考资料2：http://sentsin.com/web/1011.html
+
+创建frame
+-此目录存放react的各种框架实践
+
